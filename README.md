@@ -6,7 +6,7 @@ This repository contains my solutions for **Numerical Methods (AP1)**.
 [Open in Google Drive](https://drive.google.com/file/d/1ewi-eRlSQ46wAyyQajNZIGlpFN1ZFKF9/view?usp=sharing)
 ---
 
-# Numerical Tasks – AP12
+# Numerical Tasks – AP2
 
 This repository contains my solutions for **Numerical Methods (AP2)**.
 
