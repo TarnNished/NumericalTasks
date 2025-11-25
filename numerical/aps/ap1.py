@@ -1,12 +1,14 @@
 import numpy as np
 import matplotlib.pyplot as plt
 
+#Defining Norm Functions
 def vector_norm(x, p=2):
     return np.linalg.norm(x, ord=p)
 
 def matrix_norm(A, p=2):
     return np.linalg.norm(A, ord=p)
 
+#generate random data
 np.random.seed(42)
 
 x1 = np.random.rand(4)
@@ -20,6 +22,7 @@ print("x2 =", x2)
 print("\nA1 =\n", A1)
 print("A2 =\n", A2)
 
+# Computing Norm Distances
 d_L1 = vector_norm(x1 - x2, p=1)
 d_L2 = vector_norm(x1 - x2, p=2)
 d_matrix_L1 = matrix_norm(A1 - A2, p=1)
@@ -31,6 +34,7 @@ print(f"Vector distance (L2): {d_L2:.4f}")
 print(f"Matrix distance (L1 induced): {d_matrix_L1:.4f}")
 print(f"Matrix distance (L2 induced): {d_matrix_L2:.4f}")
 
+# Visualizing Unit Balls
 theta = np.linspace(0, 2 * np.pi, 400)
 circle_x = np.cos(theta)
 circle_y = np.sin(theta)
