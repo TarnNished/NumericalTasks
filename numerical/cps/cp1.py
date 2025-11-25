@@ -6,7 +6,7 @@ import matplotlib.pyplot as plt
 
 
 # ---------- CONFIG ----------
-VIDEO_PATH = "highway.mp4"  # your downloaded video
+VIDEO_PATH = "highway.mp4"
 MAX_TRACK_DISTANCE = 50      # pixels – max distance to match same car between frames
 MAX_MISSED_FRAMES = 10       # how many frames we allow a track to be missing
 MIN_CONTOUR_AREA = 200       # filter out tiny blobs (noise)
@@ -38,7 +38,6 @@ class Track:
 def smooth_series(y, window=SAVGOL_WINDOW, poly=SAVGOL_POLY):
     y = np.array(y, dtype=float)
     if len(y) < window:
-        # too short for Savitzky–Golay, just return original
         return y
     return savgol_filter(y, window_length=window, polyorder=poly)
 
