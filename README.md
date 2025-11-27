@@ -31,3 +31,9 @@ This repository contains my solutions for **Numerical Methods (AP4)**.
 
 ---
 
+This repository contains my solutions for **Numerical Methods (CP1)**.
+
+📄 **Video:**  
+[Open in Google Drive](https://drive.google.com/file/d/1AyrhJeGxl6f7F9cJQtMEcxKCk93bf3_x/view?usp=sharing)
+
+---
