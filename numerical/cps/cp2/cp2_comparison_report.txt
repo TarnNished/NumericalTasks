@@ -1,0 +1,30 @@
+======================================================================
+DRONE SWARM DYNAMICS - METHOD COMPARISON REPORT
+======================================================================
+
+Problem: Modeling dynamics of a swarm of drones with pairwise forces
+Number of drones: 5
+Time step: 0.05 s
+Total simulation time: 10.0 s
+Number of steps: 200
+
+======================================================================
+METHOD COMPARISON
+======================================================================
+
+Method 1: Implicit Backward Euler with Fixed-Point Iteration
+  Runtime: 0.227579 s
+  Final spread: 0.845365
+  Avg iterations/step: 3.46
+  Energy drift: 7.895366e+01
+
+Method 2: Implicit Backward Euler with Newton-Gauss-Seidel
+  Runtime: 2.569880 s
+  Final spread: 0.840379
+  Avg iterations/step: 3.29
+  Energy drift: 7.891700e+01
+
+Comparison:
+  Speed ratio (NGS/FP): 11.2923
+  Solution difference: 1.175434e-03
+  Spread difference: 4.985899e-03
